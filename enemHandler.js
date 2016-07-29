@@ -10,6 +10,8 @@ function EnemHandler(){
 
 	this.update = function(){
 
+
+		
 		for(var i = 0; i < array.length; i++){
 			array[i].update();
 
