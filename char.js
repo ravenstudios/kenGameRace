@@ -33,10 +33,14 @@ var Char = function(){
 				x = x + speed;
 		}
 
-		
+		if(keyIsDown(UP_ARROW)){
+			console.log("up pressed");
+			shootHandler.pushShoot(x, y);	
+		}
 	
 	};
 
+	
 	this.getX = function(){
 		return x;
 	};
@@ -51,3 +55,17 @@ var Char = function(){
 
 
 };
+
+function keyTyped() {
+  if (key === ' ') {
+    
+  	shootHandler.pushShoot(char.getX(), char.getY());	
+
+  } 
+ }
+
+
+
+
+
+
